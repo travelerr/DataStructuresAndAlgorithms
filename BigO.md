@@ -5,3 +5,5 @@
 ![Screen Shot 2022-09-06 at 7.52.38 PM.png](/screenshots/Screen%20Shot%202022-09-06%20at%207.52.38%20PM.png)
 
 ![Screen Shot 2022-09-06 at 7.57.47 PM.png](/screenshots/Screen%20Shot%202022-09-06%20at%207.57.47%20PM.png)
+
+![image](screenshots/sortingbigo.png)

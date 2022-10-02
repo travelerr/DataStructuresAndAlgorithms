@@ -8,6 +8,8 @@ Animations: https://www.toptal.com/developers/sorting-algorithms
   - Insertion Sorting
 
  - All 3 algos loop over the array
+ - All 3 are similar in regards complexity and efficiency
+ - Best for small data sets
 
 ## Built in JS Sorting
 ![built-in-js-sorting.png](screenshots/built-in-js-sorting.png)
@@ -15,7 +17,10 @@ Animations: https://www.toptal.com/developers/sorting-algorithms
 ## Swapping Method
 ![swappping.png](screenshots/swapping.png)
 
-### Bubble Sort
+## Bubble Sort
+
+ - Works well if data is almost sorted
+
 ![image](screenshots/bubblesort.png)
 
 ![image](screenshots/bubblesort-pseudocode.png)
@@ -42,12 +47,17 @@ function bubbleSort(arr) {
 }
 ```
 
-### Selection Sort
+## Selection Sort
+
+ - Looks are current index and the one ahead, if lower it swaps them
+
+ - Doesnt work well if data is almost sorted
+
+ - Simple to understand
+
 ![selectionsort.png](screenshots/selectionsort.png)
 
 ![image](screenshots/selection-pseudocode.png)
-
- - Looks are current index and the one ahead, if lower it swaps them
 
  ```
  function selectionSort(arr) {
@@ -71,11 +81,14 @@ selectionSort([5, 20, 4, 6, 22, 13, 8, 3, 34])
 ```
 
 ## Insertion Sorting
+
+ - Works well if data is almost sorted
+
+ - Works well for scenarios where new data is coming in real time. Due to the fact the full left half is sorted, when a new data point is added, only one loop is required to insert into correct location
+
 ![image](screenshots/insertion.png)
 
 ![image](screenshots/insertion-pseudocode.png)
-
- - Works well for scenarios where new data is coming in real time. Due to the fact the full left half is sorted, when a new data point is added, only one loop is required to insert into correct location
 
 ```
 function insertionSort(arr){
@@ -92,3 +105,6 @@ var currentVal;
 
 insertionSort([1, 2]);
 ```
+
+## Big O
+![image](screenshots/sortingbigo.png)
