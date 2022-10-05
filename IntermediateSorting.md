@@ -2,13 +2,19 @@
 
 ## Quick Sort
 
+- Uses a pivot and a pivot helper
+- Pivot picking DOES matter, (ideally it is the median) but that is the point of Sorting
+- Can use first or last index
+
+![image](screenshots/quicksort.png)
+
 ## Merge Sort
 
  - Break array into single item ( [x] ) arrays
  - Uses a helper function to merge two sorted arrays
 
  ![image](screenshots/merge.png)
- 
+
  ![image](screenshots/mergep.png)
 
 
