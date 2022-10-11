@@ -15,6 +15,13 @@ Animations: https://www.toptal.com/developers/sorting-algorithms
 ![built-in-js-sorting.png](screenshots/built-in-js-sorting.png)
 
 ## Swapping Method
+
+```
+let temp = arr[i];
+arr[i] = arr[x]
+arr[x] = temp;
+```
+
 ![swappping.png](screenshots/swapping.png)
 
 ## Bubble Sort

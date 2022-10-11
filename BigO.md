@@ -11,3 +11,5 @@
 ![image](screenshots/sortingbigo.png)
 
 ![image](screenshots/mergesortbigo.png)
+
+![image](screenshots/quicksortbigo.png)
