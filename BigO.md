@@ -15,3 +15,13 @@
 ![image](screenshots/quicksortbigo.png)
 
 ![image](screenshots/radixbigo.png)
+
+![image](screenshots/sllbigo.png)
+
+![image](screenshots/dllbigo.png)
+
+![image](screenshots/stackbigo.png)
+
+![image](screenshots/queuebigo.png)
+
+![image](screenshots/bstbigo.png)
