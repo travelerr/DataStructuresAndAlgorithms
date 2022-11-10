@@ -28,4 +28,4 @@
 
 ![image](screenshots/bhbigo.png)
 
-![image](../screenshots/htbigo.png)
+![image](screenshots/htbigo.png)
