@@ -1,6 +1,6 @@
 # SinglyLinkedList
 
-![image](screenshots/sllex.png)
+![image](../screenshots/sllex.png)
 
 ```
 class Node {
@@ -144,6 +144,6 @@ list.push(50)
 list.push(100)
 ```
 
-![image](screenshots/sllrecap.png)
+![image](../screenshots/sllrecap.png)
 
-![image](screenshots/sllbigo.png)
+![image](../screenshots/sllbigo.png)

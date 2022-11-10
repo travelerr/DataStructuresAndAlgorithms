@@ -4,7 +4,7 @@
 
 ![image](../screenshots/stack.png)
 
-![image](../screenshots/stackex.png)
+![image](../../screenshots/stackex.png)
 
  ```
  class Node {

@@ -1,35 +1,32 @@
-# Binary Heaps
+# Priority Queue / Binary Heap
 
-## Max Binary Heap
-Parent node is ALWAYS greater than its children, that is the only condition
-No Order
-Largest node is at the root
+ - Tree fills out from left to right (pyramid looking)
+ - Binary Tree is better for searching
+ - Binary Heap better for sorting
+ - Binary Heaps are either Max Binary or Min Binary
+ - With a priority, able to represent heaps as array
 
-## Min Binary Heap
-Parent node is ALWAYS smaller than its children, that is the only condition
-No Order
-Smallest node is at the root
+ Binary Heap is a kind of Heap
+ Heap is a kind of Tree
 
-## Removing
-Usually remove from the root
-ie Max Binary Heap removes max value @ root
-ie Min Binary Heap removes min value @ root
+Min Binary Heap
 
-![image](../screenshots/bh.png)
-
-![image](../screenshots/bhchild.png)
-
-![image](../screenshots/bhparent.png)
-
-### Max Binary Heap
 ```
-class MaxBinaryHeap {
+class Node {
+    constructor(val, priority) {
+        this.val = val;
+        this.priority = priority;
+    }
+}
+
+class PriorityQueue {
     constructor() {
         this.values = [];
     }
 
-    insert(val) {
-        this.values.push(val);
+    enqueue(val, priority) {
+        let newNode = new Node(val, priority);
+        this.values.push(newNode);
         this.bubbleUp()
     }
 
@@ -39,21 +36,22 @@ class MaxBinaryHeap {
         while (idx > 0) {
             let parentIdx = Math.floor((idx - 1 / 2));
             let parent = this.values[parentIdx];
-            if(elm <= parent) break
+            // swap for max binary
+            if(elm.priority >= parent.priority) break
             this.values[parentIdx] = elm;
             this.values[idx] = parent;
             idx = parentIdx;
         }
     }
 
-    extractMax() {
-        let max = this.values[0];
+    dequeue() {
+        let min = this.values[0];
         let end = this.values.pop();
         if(this.values.length > 0) {
             this.values[0] = end;
             this.bubbleDown();
         }
-        return max;
+        return min;
     }
 
     bubbleDown() {
@@ -68,13 +66,15 @@ class MaxBinaryHeap {
 
             if(leftChildIdx < length) {
                 leftChild = this.values[leftChildIdx];
-                if (leftChild > element) {
+                // swap for max binary
+                if (leftChild.priority < element.priority) {
                     swap = leftChildIdx;
                 }
             }
             if(rightChildIdx < length) {
                 rightChild = this.values[rightChildIdx];
-                if ((swap === null && rightChild > element) || (swap !== null && rightChild > leftChild))  {
+                // swap for max binary
+                if ((swap === null && rightChild.priority < element.priority) || (swap !== null && rightChild.priority < leftChild.priority))  {
                     swap = rightChildIdx;
                 }
             }
@@ -86,8 +86,8 @@ class MaxBinaryHeap {
     }
 }
 
-var binaryHeap = new MaxBinaryHeap();
+var priorityQueue = new PriorityQueue();
+priorityQueue.enqueue("GOT", 1)
+priorityQueue.enqueue("Better Caul Saul", 2)
+priorityQueue.enqueue("Seinfeld", 3)
 ```
-
-### Min Binary Heap
-Change `if(elm <= parent) break` to `if(elm >= parent) break` in bubbleUp()

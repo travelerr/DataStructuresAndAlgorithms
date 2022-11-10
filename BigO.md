@@ -25,3 +25,7 @@
 ![image](screenshots/queuebigo.png)
 
 ![image](screenshots/bstbigo.png)
+
+![image](screenshots/bhbigo.png)
+
+![image](../screenshots/htbigo.png)
