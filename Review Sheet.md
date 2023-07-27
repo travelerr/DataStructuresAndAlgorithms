@@ -3,36 +3,42 @@
 ## Reverse List
 
 https://leetcode.com/problems/reverse-linked-list/description/
+
+```
 var reverseList = function (head) {
-let prev = null;
-while (head != null) {
-let next = head.next;
-head.next = prev;
-prev = head;
-head = next;
-}
-return prev;
+    let prev = null;
+    while (head != null) {
+        let next = head.next;
+        head.next = prev;
+        prev = head;
+        head = next;
+    }
+    return prev;
 };
+```
 
 ## Merge Lists
 
 https://leetcode.com/problems/merge-two-sorted-lists/description/
+
+```
 var mergeTwoLists = function (list1, list2) {
-let prehead = new ListNode(-1);
-let prev = prehead;
-while (list1 != null && list2 != null) {
-if (list1.val <= list2.val) {
-prev.next = list1;
-list1 = list1.next;
-} else {
-prev.next = list2;
-list2 = list2.next;
-}
-prev = prev.next;
-}
-prev.next = list1 === null ? list2 : list1;
-return prehead.next;
+    let prehead = new ListNode(-1);
+    let prev = prehead;
+    while (list1 != null && list2 != null) {
+        if (list1.val <= list2.val) {
+        prev.next = list1;
+        list1 = list1.next;
+    } else {
+        prev.next = list2;
+        list2 = list2.next;
+    }
+        prev = prev.next;
+    }
+    prev.next = list1 === null ? list2 : list1;
+    return prehead.next;
 };
+```
 
 # Trees
 
@@ -79,18 +85,20 @@ Traversal Steps
 
 ## BFS
 
+```
 function BFS() {
-let queue = [];
-let visited = [];
-queue.push(this.root)
-while(queue.length) {
-let x = queue.shift();
-visited.push(x);
-if(x.left) queue.push(x.left);
-if(x.right) queue.push(x.right);
-}
+    let queue = [];
+    let visited = [];
+    queue.push(this.root)
+    while(queue.length) {
+        let x = queue.shift();
+        visited.push(x);
+        if(x.left) queue.push(x.left);
+        if(x.right) queue.push(x.right);
+    }
 return visited;
 }
+```
 
 ## DSFPreOrder
 
