@@ -96,7 +96,7 @@ function BFS() {
         if(x.left) queue.push(x.left);
         if(x.right) queue.push(x.right);
     }
-return visited;
+    return visited;
 }
 ```
 
