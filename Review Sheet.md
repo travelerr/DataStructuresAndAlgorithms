@@ -83,6 +83,16 @@ Traversal Steps
 - DFS In Order will order data (1, 2, 3 etc)
 - DFS Pre Order - use for cloning / duplicating tree. Ordered to reconstruct
 
+### Images
+
+![image](./screenshots/bfs.png)
+
+![image](./screenshots/preorder.png)
+
+![image](./screenshots/postorder.png)
+
+![image](./screenshots/inorder.png)
+
 ## BFS
 
 ```
