@@ -58,6 +58,12 @@ Traversal Steps
 2.  Traverse the left
 3.  Traverse the right
 
+### In Order
+
+- Traverse the entire left side
+- Visit the node
+- Traverse the entire right side
+
 ### Pre Order
 
 - Visit the Node
@@ -71,12 +77,6 @@ Traversal Steps
 - Visit the node
 - The root is the last visited
 
-### In Order
-
-- Traverse the entire left side
-- Visit the node
-- Traverse the entire right side
-
 ### Which is better?
 
 - If tree is tall - use BFS. If wide - use DFS
@@ -87,11 +87,11 @@ Traversal Steps
 
 ![image](./screenshots/bfs.png)
 
+![image](./screenshots/inorder.png)
+
 ![image](./screenshots/preorder.png)
 
 ![image](./screenshots/postorder.png)
-
-![image](./screenshots/inorder.png)
 
 ## BFS
 
