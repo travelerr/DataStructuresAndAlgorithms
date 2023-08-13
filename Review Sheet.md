@@ -187,6 +187,17 @@ var isBalanced = function(root) {
 };
 ```
 
+### Compare Two Trees
+
+```
+function compareTrees(p, q) {
+    if (!p && !q ) return true
+    if (!p || !q) return false
+    if (p.val !== q.val) return false
+    return compareTrees(p.left, q.left) && compareTrees(p.right, q.right)
+}
+```
+
 # Sorting
 
 # Binary Search
